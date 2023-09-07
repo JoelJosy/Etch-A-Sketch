@@ -1,7 +1,16 @@
 let grid = document.querySelector('.grid');
-console.log(grid);
 
+
+// Create tiles
 for (let i = 0; i < (16**2); i++) {
-    let divEle =  document.createElement('div');
-    grid.appendChild(divEle);
+    grid.appendChild(document.createElement('div'));
 }
+
+
+// Add class to each hovered tile
+let divs = document.querySelectorAll('.grid > div')
+divs.forEach((div) => {
+    div.addEventListener('mouseover', () => {
+        div.classList.add('tileHover')
+    })
+});

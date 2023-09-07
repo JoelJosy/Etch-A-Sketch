@@ -32,5 +32,9 @@ div {
     gap: 1px 1px;
 }
 
+.tileHover {
+    background-color: black;
+}
+
 
 
