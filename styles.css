@@ -35,5 +35,9 @@ div {
     background-color: black;
 }
 
-
-
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
