@@ -15,7 +15,6 @@ function createGrid(gridSize) {
     let divs = document.querySelectorAll('.grid > div');
     divs.forEach((div) => {
         div.addEventListener('mouseover', () => {
-            div.classList.add('tile-hover');
             div.style.backgroundColor = bgColor;
         });
     });
@@ -34,7 +33,7 @@ function clearGrid(opt) {
     } else if (opt == 2) {
         let divs = document.querySelectorAll('.grid > div');
         divs.forEach((div) => {
-            div.classList.remove('tile-hover');
+            div.style.backgroundColor = '#ffffff';
         });
     };
 };

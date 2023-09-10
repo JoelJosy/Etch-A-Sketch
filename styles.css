@@ -32,9 +32,6 @@ div {
     grid-template-rows: repeat(16, 1fr);
 }
 
-.tile-hover {
-    background-color: #000000;
-}
 
 .slider {
     display: flex;
