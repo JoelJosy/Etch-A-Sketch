@@ -15,24 +15,26 @@ function createGrid(gridSize) {
     let divs = document.querySelectorAll('.grid > div');
     divs.forEach((div) => {
         div.addEventListener('mouseover', () => {
-            div.classList.add('tileHover');
+            div.classList.add('tile-hover');
+            div.style.backgroundColor = bgColor;
         });
     });
 };
 
+// Clearing grid
 function clearGrid(opt) {
     if (opt == 1) {
         if (grid.hasChildNodes()) {
             let divs = document.querySelectorAll('.grid > div');
             divs.forEach((div) => {
-                grid.removeChild(div)
+                grid.removeChild(div);
             });
     
         };
     } else if (opt == 2) {
         let divs = document.querySelectorAll('.grid > div');
         divs.forEach((div) => {
-            div.classList.remove('tileHover')
+            div.classList.remove('tile-hover');
         });
     };
 };
@@ -51,6 +53,14 @@ slider.oninput =  () => {
 
 // Clear Button 
 clearButton.onclick = () => {clearGrid(2)};
+
+// Color Picker
+let colorPick = document.getElementById('colorpick');
+let bgColor = '#000000'
+
+colorPick.addEventListener('change', function changeColor(e) {
+    bgColor = `${e.target.value}`;  
+});
 
 // Default grid
 createGrid(16);

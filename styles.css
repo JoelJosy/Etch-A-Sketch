@@ -32,8 +32,8 @@ div {
     grid-template-rows: repeat(16, 1fr);
 }
 
-.tileHover {
-    background-color: black;
+.tile-hover {
+    background-color: #000000;
 }
 
 .slider {
