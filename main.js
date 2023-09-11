@@ -35,7 +35,11 @@ function clearGrid(opt) {
         divs.forEach((div) => {
             div.style.backgroundColor = '#3D0066';
         });
-    };
+    } else if (opt == 3) {
+        divs.forEach((div) => {
+            div.style.backgroundColor = bgColor;
+        });
+    }
 };
 
 // Function to check if box is checked
@@ -54,6 +58,7 @@ function checkToggle() {
 
 let grid = document.querySelector('.grid');
 let clearButton = document.querySelector('#clearButton');
+let fillButton = document.querySelector('#fillButton');
 
 // Get no of tiles slider input
 let slider = document.getElementById('rangeSlider');
@@ -66,6 +71,9 @@ slider.oninput =  () => {
 
 // Clear Button 
 clearButton.onclick = () => {clearGrid(2)};
+
+// Fill color button
+fillButton.onclick = () => {clearGrid(3)};
 
 // Toggle grid lines
 let toggleGridBox = document.getElementById('toggleGridBox');

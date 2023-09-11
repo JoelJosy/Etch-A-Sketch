@@ -104,7 +104,7 @@ h1 {
  }
 
  /* Button design */
- #clearButton {
+ button {
     font-family: 'Nabla', cursive;
     width: 10rem;
     height: 2rem;
@@ -116,7 +116,7 @@ h1 {
     margin: 2px;
  }
 
- #clearButton:active {
+ button:active {
     background-color: #470077;
     color: #FFD500;
     border: 2px #FFD500 solid;
