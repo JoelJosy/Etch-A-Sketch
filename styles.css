@@ -119,3 +119,29 @@ section {
     border: 2px #FFD500 solid;
     border-radius: 0.2rem;
  }
+
+ /* Color Picker */
+ .color-picker {
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+ }
+
+ #colorpick {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    /* border-radius: 0.2rem; */
+    /* background-color: #36005b; */
+ }
+
+#colorpick::-webkit-color-swatch {
+    border-radius: 0.2rem;
+    border: none;
+}
