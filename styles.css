@@ -38,15 +38,6 @@ section {
     /* padding-top: 30px; */
 }
 
-.controls-section {
-    width: 17rem;
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
-    gap: 8px    ;
-    align-items: center;
-}
-
 .grid {
     display: grid;
     margin: auto;
@@ -60,12 +51,31 @@ section {
     border: 1px rgba(251, 255, 121, 0.29) solid;
 }
 
+.controls-section {
+    width: 17rem;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+
 
 .slider {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+}
+
+#rangeOutput {
+    margin: 1.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    background-color: #36005b;
+    width: 10rem;
+    border-radius: 0.2rem;
 }
 
 /* Slider design */
