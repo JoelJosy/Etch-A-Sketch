@@ -1,5 +1,6 @@
 // Function to make the grid
 function createGrid(gridSize) {
+    toggleGridBox.checked = true;
 
     // Clear existing tiles
     clearGrid(1);
@@ -22,21 +23,34 @@ function createGrid(gridSize) {
 
 // Clearing grid
 function clearGrid(opt) {
+    let divs = document.querySelectorAll('.grid > div');
     if (opt == 1) {
         if (grid.hasChildNodes()) {
-            let divs = document.querySelectorAll('.grid > div');
             divs.forEach((div) => {
                 grid.removeChild(div);
             });
     
         };
     } else if (opt == 2) {
-        let divs = document.querySelectorAll('.grid > div');
         divs.forEach((div) => {
             div.style.backgroundColor = '#470077';
         });
     };
 };
+
+// Function to check if box is checked
+function checkToggle() {
+    let tiles = document.querySelectorAll('.grid > div');
+    if (toggleGridBox.checked == true) {
+        tiles.forEach((tile) => {
+            tile.style.border = "1px rgba(251, 255, 121, 0.29) solid";
+        });
+    } else if (toggleGridBox.checked == false) {
+        tiles.forEach((tile) => {
+            tile.style.border = "none";
+        });
+    }
+}
 
 let grid = document.querySelector('.grid');
 let clearButton = document.querySelector('#clearButton');
@@ -52,6 +66,11 @@ slider.oninput =  () => {
 
 // Clear Button 
 clearButton.onclick = () => {clearGrid(2)};
+
+// Toggle grid lines
+let toggleGridBox = document.getElementById('toggleGridBox');
+
+toggleGridBox.addEventListener('change', checkToggle)
 
 // Color Picker
 let colorPick = document.getElementById('colorpick');

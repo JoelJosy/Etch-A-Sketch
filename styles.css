@@ -10,7 +10,7 @@ body {
     text-align: center;
     background-color: #470077;
     /* font-family: 'Raleway', sans-serif; */
-    /* font-weight: 300; */
+    font-weight: 300;
 }
 
 header {
@@ -19,12 +19,11 @@ header {
 
 
 
-section {
-    border: 2px yellow solid;
-}
+/* section { */
+    /* border: 2px yellow solid; */
+/* } */
 
 .container {
-    border: 2px yellow solid;
     padding: 1.5rem;
     display: flex;
     align-items: center;
@@ -45,6 +44,7 @@ section {
     height: 500px;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
+    background-color: #3D0066;
 }
 
 .grid > div {
@@ -52,16 +52,22 @@ section {
 }
 
 .controls-section {
+    background-color: #3D0066;
     width: 17rem;
+    height: 500px;
     display: flex;
-    padding: 10px;
     flex-direction: column;
     gap: 1.5rem;
     align-items: center;
+    justify-content: center;
+}
+
+.slider > h3 {
+    margin: 0;
 }
 
 
-
+/* Slider design */
 .slider {
     display: flex;
     flex-direction: column;
@@ -78,7 +84,6 @@ section {
     border-radius: 0.2rem;
 }
 
-/* Slider design */
 .slider > input {
     -webkit-appearance: none;
     appearance: none;
@@ -137,8 +142,6 @@ section {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    /* border-radius: 0.2rem; */
-    /* background-color: #36005b; */
  }
 
 #colorpick::-webkit-color-swatch {
