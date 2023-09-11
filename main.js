@@ -33,7 +33,7 @@ function clearGrid(opt) {
     } else if (opt == 2) {
         let divs = document.querySelectorAll('.grid > div');
         divs.forEach((div) => {
-            div.style.backgroundColor = '#ffffff';
+            div.style.backgroundColor = '#510087';
         });
     };
 };
@@ -55,7 +55,7 @@ clearButton.onclick = () => {clearGrid(2)};
 
 // Color Picker
 let colorPick = document.getElementById('colorpick');
-let bgColor = '#000000'
+let bgColor = '#FFD500'
 
 colorPick.addEventListener('change', function changeColor(e) {
     bgColor = `${e.target.value}`;  
