@@ -12,10 +12,15 @@ function createGrid(gridSize) {
         grid.appendChild(document.createElement('div'));
     };
     
-    // Add class to each hovered tile
+    // Add event listener to each hovered tile
     let divs = document.querySelectorAll('.grid > div');
     divs.forEach((div) => {
         div.addEventListener('mouseover', () => {
+            if (mouseDown) {
+                div.style.backgroundColor = bgColor;
+            }
+        });
+        div.addEventListener('mousedown', () => {
             div.style.backgroundColor = bgColor;
         });
     });
@@ -59,6 +64,11 @@ function checkToggle() {
 let grid = document.querySelector('.grid');
 let clearButton = document.querySelector('#clearButton');
 let fillButton = document.querySelector('#fillButton');
+
+// Click and hold 
+let mouseDown = false;
+document.body.addEventListener("mousedown", () => {mouseDown = true});
+document.body.addEventListener("mouseup", () => {mouseDown = false});
 
 // Get no of tiles slider input
 let slider = document.getElementById('rangeSlider');
