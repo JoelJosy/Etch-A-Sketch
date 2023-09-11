@@ -9,9 +9,10 @@ body {
     padding: 0;
     text-align: center;
     background-color: #470077;
-    font-family: 'Nabla', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 h1 {
+    font-family: 'Nabla', cursive;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
@@ -105,7 +106,7 @@ h1 {
 
  /* Button design */
  button {
-    font-family: 'Nabla', cursive;
+    font-family: 'Poppins', sans-serif;
     width: 10rem;
     height: 2rem;
     background-color: #36005b;
