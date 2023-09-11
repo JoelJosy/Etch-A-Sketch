@@ -93,3 +93,19 @@ section {
  }
 
  /* Button design */
+ #clearButton {
+    width: 10rem;
+    height: 2rem;
+    background-color: #36005b;
+    color: #FFD500;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+ }
+
+ #clearButton:active {
+    background-color: #470077;
+    color: #FFD500;
+    border: 2px #FFD500 solid;
+    border-radius: 0.2rem;
+ }
