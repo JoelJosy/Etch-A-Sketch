@@ -33,7 +33,7 @@ function clearGrid(opt) {
         };
     } else if (opt == 2) {
         divs.forEach((div) => {
-            div.style.backgroundColor = '#470077';
+            div.style.backgroundColor = '#3D0066';
         });
     };
 };
