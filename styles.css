@@ -9,11 +9,11 @@ body {
     padding: 0;
     text-align: center;
     background-color: #470077;
-    /* font-family: 'Raleway', sans-serif; */
-    font-weight: 300;
+    font-family: 'Nabla', cursive;
 }
 h1 {
-    font-size: 50px;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -48,6 +48,7 @@ h1 {
 
 .controls-section {
     background-color: #3D0066;
+    font-size: 1.2rem;
     width: 17rem;
     height: 500px;
     display: flex;
@@ -104,13 +105,15 @@ h1 {
 
  /* Button design */
  #clearButton {
+    font-family: 'Nabla', cursive;
     width: 10rem;
     height: 2rem;
     background-color: #36005b;
     color: #FFD500;
     border: none;
     border-radius: 0.2rem;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    margin: 2px;
  }
 
  #clearButton:active {
